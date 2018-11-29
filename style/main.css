@@ -406,11 +406,11 @@ hr {
         font-size:2vw; } }
   .tile.tile-super .tile-inner {
     color: #f9f6f2;
-/*    background: url("../nerds/griff.png");*/
-    font-size: 30px; }
+    background: url("../nerds/nut.png");
+    font-size: 2vw; }
     @media screen and (max-width: 520px) {
       .tile.tile-super .tile-inner {
-        font-size: 10px; } }
+        font-size: 2vw; } }
 
 @-webkit-keyframes appear {
   0% {
