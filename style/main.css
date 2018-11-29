@@ -199,6 +199,7 @@ hr {
       .game-container .game-message.game-won a.keep-playing-button {
         display: inline-block; }
     .game-container .game-message.game-won, .game-container .game-message.game-over {
+      color: black;
       display: block; }
 
 .grid-container {
@@ -325,69 +326,84 @@ hr {
   .tile .tile-inner {
     border-radius: 3px;
     background: #eee4da;
-    font-size: 0px;
+    background-size: contain;
     text-align: center;
     font-weight: bold;
     z-index: 10;
-    font-size: 12px; }
+    font-size: 1vw; }
   .tile.tile-2 .tile-inner {
     background: url("../nerds/nyquil.png");
+    background-size: contain;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-4 .tile-inner {
     background: url("../nerds/ourman.png");
+    background-size: contain;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-8 .tile-inner {
     color: #f9f6f2;
-    background: url("../nerds/griff.png");}
+    background: url("../nerds/griff.png");
+    background-size: contain;
+    }
   .tile.tile-16 .tile-inner {
     color: #f9f6f2;
-    background: url("../nerds/jack.png");}
+    background: url("../nerds/jack.png");
+    background-size: contain;}
   .tile.tile-32 .tile-inner {
     color: #f9f6f2;
-    background: url("../nerds/bean.png"); }
+    background: url("../nerds/bean.png"); 
+    background-size: contain;}
   .tile.tile-64 .tile-inner {
     color: #f9f6f2;
-    background: url("../nerds/me.png"); }
+    background: url("../nerds/me.png");
+    background-size: contain;}
   .tile.tile-128 .tile-inner {
     color: #f9f6f2;
     background: url("../nerds/ben.png");
+    background-size: contain;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
-    font-size: 12px; }
+    font-size: 2vw; }
     @media screen and (max-width: 520px) {
       .tile.tile-128 .tile-inner {
         font-size: 25px; } }
   .tile.tile-256 .tile-inner {
     color: #f9f6f2;
     background: url("../nerds/flex.png");
+    background-size: contain;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
-    font-size: 12px; }
+    font-size: 2vw; }
     @media screen and (max-width: 520px) {
       .tile.tile-256 .tile-inner {
+        background-size: contain;
         font-size: 25px; } }
   .tile.tile-512 .tile-inner {
     color: #f9f6f2;
     background: url("../nerds/sprong.png");
+    background-size: contain;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
-    font-size: 12px; }
+    font-size: 2vw; }
     @media screen and (max-width: 520px) {
       .tile.tile-512 .tile-inner {
-        font-size: 25px; } }
+        background-size: contain;
+        font-size: 2vw; } }
   .tile.tile-1024 .tile-inner {
     color: #f9f6f2;
     background: url("../nerds/tyler.png");
+    background-size: contain;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
-    font-size: 12px; }
+    font-size: 2vw; }
     @media screen and (max-width: 520px) {
       .tile.tile-1024 .tile-inner {
-        font-size: 15px; } }
+        background-size: contain;
+        font-size: 2vw; } }
   .tile.tile-2048 .tile-inner {
     color: #f9f6f2;
     background: url("../nerds/ultimate.png");
+    background-size: contain;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
-    font-size: 12px; }
+    font-size: 2vw; }
     @media screen and (max-width: 520px) {
       .tile.tile-2048 .tile-inner {
-        font-size: 15px; } }
+        font-size:2vw; } }
   .tile.tile-super .tile-inner {
     color: #f9f6f2;
 /*    background: url("../nerds/griff.png");*/
@@ -630,11 +646,11 @@ hr {
           display: none; }
       .game-container .game-message.game-won {
         background: rgba(237, 194, 46, 0.5);
-        color: white; }
+        color: black; }
         .game-container .game-message.game-won a.keep-playing-button {
           display: inline-block; }
       .game-container .game-message.game-won, .game-container .game-message.game-over {
-        color: white;
+        color: black;
         display: block; 
       }
 
@@ -751,7 +767,7 @@ hr {
     transform: translate(202px, 202px); }
 
   .tile .tile-inner {
-    font-size: 35px; }
+    font-size: 5vw; }
 
   .game-message p {
     font-size: 30px !important;
