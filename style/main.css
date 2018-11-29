@@ -622,7 +622,7 @@ hr {
         border-radius: 3px;
         padding: 0 20px;
         text-decoration: none;
-        color: #f9f6f2;
+        color: white;
         height: 40px;
         line-height: 42px;
         margin-left: 9px; }
@@ -630,11 +630,13 @@ hr {
           display: none; }
       .game-container .game-message.game-won {
         background: rgba(237, 194, 46, 0.5);
-        color: #f9f6f2; }
+        color: white; }
         .game-container .game-message.game-won a.keep-playing-button {
           display: inline-block; }
       .game-container .game-message.game-won, .game-container .game-message.game-over {
-        display: block; }
+        color: white;
+        display: block; 
+      }
 
   .grid-container {
     position: absolute;
